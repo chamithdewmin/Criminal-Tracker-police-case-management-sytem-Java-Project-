@@ -1,0 +1,138 @@
+/* Container Styling */
+.create_container {
+    -fx-background-color: #F0F8FF;
+}
+
+/* DatePicker Styling */
+.create_container DatePicker {
+    -fx-pref-width: 230;
+    -fx-pref-height: 50;
+    -fx-background-color: #FFFFFF;
+    -fx-font-size: 1.3em;
+    -fx-text-fill: #000000;
+    -fx-padding: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0.5, 0, 8);
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+
+/* Arrow Button Styling */
+.create_container DatePicker .arrow-button {
+    -fx-background-color: #2369a6;
+    -fx-background-radius: 10;
+}
+
+/* Popup Calendar Styling */
+.create_container DatePicker .date-picker-popup {
+    -fx-background-color: #2369a6;
+    -fx-border-color: #2369a6;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+}
+
+/* Month and Year Label Styling */
+.create_container DatePicker .month-year-label {
+    -fx-background-color: #2369a6;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 1em;
+    -fx-padding: 5;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+/* Weekday Name Styling */
+.create_container DatePicker .day-name-cell {
+    -fx-background-color: #2369a6;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 0.9em;
+    -fx-font-weight: bold;
+}
+
+/* Day Cell Styling */
+.create_container DatePicker .day-cell {
+    -fx-text-fill: #000000;
+    -fx-font-size: 1em;
+    -fx-background-radius: 10;
+}
+
+.create_container DatePicker .day-cell:hover {
+    -fx-background-color: #2369a6;
+    -fx-text-fill: #FFFFFF;
+}
+
+.create_container DatePicker .day-cell:selected {
+    -fx-background-color: #2369a6;
+    -fx-text-fill: #FFFFFF;
+}
+
+/* Today Date Styling */
+.create_container DatePicker .today {
+    -fx-background-color: #2369a6;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 10;
+}
+
+/* Disabled Dates Styling */
+.create_container DatePicker .day-cell:disabled {
+    -fx-background-color: #CCCCCC;
+    -fx-text-fill: #666666;
+}
+
+/* Focus and Hover Effects */
+.create_container DatePicker:hover {
+    -fx-cursor: hand;
+}
+
+/* Text Field Styling */
+.create_container DatePicker .text-field {
+    -fx-background-color: transparent;
+    -fx-text-fill: #000000;
+}
+
+.create_container DatePicker .text-field:focused {
+    -fx-background-color: transparent;
+}
+
+.boarder {
+    -fx-pref-width: 710;
+    -fx-pref-height: 500;
+    -fx-background-color: #F0F8FF;
+    -fx-text-fill: a;
+    -fx-font-size: 1.1em;
+    -fx-alignment: center_left;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0.5, 0, 8);
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-padding: 10;
+}
+
+.Time {
+    -fx-font-size: 3.2em;
+    -fx-font-weight: bold;
+}
+
+.Title{
+    -fx-font-size: 1.5em;
+    -fx-font-weight: bold;
+    -fx-fill: #003366;
+    -fx-padding: 15;
+}
+
+.credit-card-button {
+    -fx-background-color: linear-gradient( #FFFFFF, #FFFFFF);
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-text-fill: #fff;
+    -fx-font-size: 16px;
+    -fx-font-weight: 600;
+    -fx-padding: 15px 30px;
+    -fx-text-alignment: left;
+    -fx-pref-width: 300px;
+    -fx-pref-height: 180px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0.5, 0, 8);
+    -fx-alignment: top-left;
+    -fx-graphic-text-gap: 10px;
+    -fx-translate-y: -5px;
+    fx-translate-y: 2px;
+
+}

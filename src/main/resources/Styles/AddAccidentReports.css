@@ -1,0 +1,81 @@
+.body {
+    -fx-background-color: #F0F8FF;
+}
+
+.boarder {
+    -fx-pref-width: 1455;
+    -fx-pref-height: 830;
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #003366;
+    -fx-font-size: 1.1em;
+    -fx-alignment: center_left;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0.5, 0, 8);
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-padding: 10;
+}
+
+/* Button Styling */
+.back_button {
+    -fx-background-color: linear-gradient(to right, #003366, #003366);
+    -fx-pref-width: 70;
+    -fx-pref-height: 25;
+    -fx-font-size: 1.4em;
+    -fx-font-weight: bold;
+    -fx-font-family: "Calibri Light";
+    -fx-text-fill: #FFFFFF;
+    -fx-cursor: hand;
+}
+
+.save_button {
+    -fx-background-color: linear-gradient(to right, #008000, #008000);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0, 0, 8);
+    -fx-pref-width: 80;
+    -fx-pref-height: 25;
+    -fx-font-size: 1.2em;
+    -fx-font-weight: bold;
+    -fx-font-family: "Calibri Light";
+    -fx-text-fill: #FFFFFF;
+    -fx-cursor: hand;
+}
+
+.save_button:hover {
+    -fx-background-color: linear-gradient(to right, #006600, #006600);
+}
+
+.cancel_button {
+    -fx-background-color: linear-gradient(to right, #FF0000, #FF0000);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0, 0, 8);
+    -fx-pref-width: 80;
+    -fx-pref-height: 25;
+    -fx-font-size: 1.2em;
+    -fx-font-weight: bold;
+    -fx-font-family: "Calibri Light";
+    -fx-text-fill: #FFFFFF;
+    -fx-cursor: hand;
+}
+
+.cancel_button:hover {
+    -fx-background-color: linear-gradient(to right, #CC0000, #CC0000);
+}
+
+/* TextField Styling */
+.text-field {
+    -fx-background-color: #F8F8F8;
+    -fx-border-color: #CCCCCC;
+    -fx-border-width: 1px;
+    -fx-padding: 5px;
+    -fx-font-size: 1.1em;
+}
+
+.text-field:focused {
+    -fx-border-color: #0066CC;
+    -fx-background-color: #FFFFFF;
+}
+.Title {
+    -fx-font-size: 2em;
+    -fx-font-weight: bold;
+    -fx-fill: #003366;
+    -fx-padding: 15;
+}
+

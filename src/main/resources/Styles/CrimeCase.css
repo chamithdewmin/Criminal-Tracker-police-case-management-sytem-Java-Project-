@@ -1,0 +1,194 @@
+.body {
+    -fx-background-color: #F0F8FF;
+}
+
+.TableView {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0, 0, 8);
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-padding: 10;
+    -fx-background-color: white;
+    -fx-border-color: #dddddd;
+    -fx-border-width: 1;
+}
+
+.TableView .column-header-background {
+    -fx-background-color: #f0f0f0;
+    -fx-border-radius: 15 15 0 0;
+    -fx-background-radius: 15 15 0 0;
+}
+
+.TableView .table-row-cell {
+    -fx-border-color: transparent;
+    -fx-background-radius: 15;
+}
+
+.TableView .table-cell {
+    -fx-padding: 10;
+    -fx-background-color: transparent;
+    -fx-alignment: CENTER-LEFT;
+    -fx-text-fill: #333333;
+    -fx-font-size: 14px;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #dddddd;
+}
+
+.TableView .table-cell:selected, .TableView .table-row-cell:selected {
+    -fx-background-color: #e0f7fa; /* Light blue for selected rows */
+    -fx-text-fill: #000000;
+}
+
+.TableView .column-header, .TableView .column-header .label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+.TableView .column-header .label {
+    -fx-padding: 5 10 5 10;
+}
+
+.TableView .scroll-bar {
+    -fx-padding: 5;
+}
+
+.TableView .scroll-bar:horizontal {
+    -fx-background-color: transparent;
+    -fx-border-radius: 0 0 15 15;
+    -fx-background-radius: 0 0 15 15;
+}
+
+.TableView .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-border-radius: 15 0 0 15;
+    -fx-background-radius: 15 0 0 15;
+}
+
+.TextField {
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-pref-width: 260;
+    -fx-pref-height: 40;
+    -fx-background-color: #FFFFFF;
+    -fx-font-size: 1.3em;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0, 0, 8);
+
+}
+
+.search_Button {
+    -fx-background-radius: 25;
+    -fx-border-radius: 25;
+    -fx-background-color:#003366;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0, 0, 8);
+    -fx-pref-width: 50;
+    -fx-pref-height: 50;
+    -fx-font-size: 1.5em;
+    -fx-font-weight: bold;
+    -fx-font-family: "Calibri Light";
+    -fx-text-fill: #FFFFFF;
+}
+.FontAwesomeIconView {
+    -fx-fill: #FFFFFF;
+}
+
+
+.search_Button:hover {
+    -fx-cursor: hand;
+}
+
+.addCase_Button {
+
+    -fx-background-color: linear-gradient(to right, #003366, #003366);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0, 0, 8);
+    -fx-pref-width: 120;
+    -fx-pref-height: 25;
+    -fx-font-size: 1.5em;
+    -fx-font-weight: bold;
+    -fx-font-family: "Calibri Light";
+    -fx-text-fill: #FFFFFF;
+}
+.addCase_Button FontAwesomeIconView {
+    -fx-fill: #FFFFFF;
+}
+
+.addCase_Button:hover {
+    -fx-cursor: hand;
+}
+
+.TableView {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0, 0, 8);
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-padding: 10;
+    -fx-background-color: white;
+    -fx-border-color: #dddddd;
+    -fx-border-width: 1;
+}
+
+.TableView .column-header-background {
+    -fx-background-color: #f0f0f0;
+    -fx-border-radius: 15 15 0 0;
+    -fx-background-radius: 15 15 0 0;
+}
+
+.TableView .table-row-cell {
+    -fx-border-color: transparent;
+    -fx-background-radius: 15;
+}
+
+.TableView .table-cell {
+    -fx-padding: 10;
+    -fx-background-color: transparent;
+    -fx-alignment: CENTER-LEFT;
+    -fx-text-fill: #333333;
+    -fx-font-size: 14px;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #dddddd;
+}
+
+.TableView .table-cell:selected, .TableView .table-row-cell:selected {
+    -fx-background-color: #e0f7fa;
+    -fx-text-fill: #000000;
+}
+
+.TableView .column-header, .TableView .column-header .label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+.TableView .column-header .label {
+    -fx-padding: 5 10 5 10;
+}
+
+.TableView .scroll-bar {
+    -fx-padding: 5;
+}
+
+.TableView .scroll-bar:horizontal {
+    -fx-background-color: transparent;
+    -fx-border-radius: 0 0 15 15;
+    -fx-background-radius: 0 0 15 15;
+}
+
+.TableView .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-border-radius: 15 0 0 15;
+    -fx-background-radius: 15 0 0 15;
+}
+.Title {
+    -fx-font-size: 2em;
+    -fx-font-weight: bold;
+    -fx-fill: #003366;
+    -fx-padding: 15;
+}
+
+.combobox {
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-pref-width: 130;
+    -fx-pref-height: 40;
+    -fx-background-color: #FFFFFF;
+    -fx-font-size: 1.3em;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0, 0, 8);
+}

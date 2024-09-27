@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1500.0" styleClass="body" stylesheets="@../Styles/crimeAdd.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.crimejava.Controllers.CaseAddController">
+   <AnchorPane layoutX="21.0" layoutY="44.0" prefHeight="815.0" prefWidth="1460.0" styleClass="boarder" stylesheets="@../Styles/crimeAdd.css">
+      <Text layoutX="25.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Title" text="Officer &amp; Criminal Details" />
+      <Text layoutX="26.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The officer in charge of the case :" />
+      <Text layoutX="22.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Criminal Name :" />
+      <Text layoutX="451.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Criminal's NIC :" />
+      <TextField fx:id="criminalName" layoutX="25.0" layoutY="193.0" prefHeight="39.0" prefWidth="393.0" />
+      <TextField fx:id="officerNametxt" layoutX="25.0" layoutY="110.0" prefHeight="39.0" prefWidth="393.0" stylesheets="@../Styles/crimeAdd.css" />
+      <TextField fx:id="criminalNic" layoutX="451.0" layoutY="193.0" prefHeight="39.0" prefWidth="393.0" />
+      <Text layoutX="453.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Officer Badge Number :" />
+      <Text layoutX="24.0" layoutY="605.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description :" />
+      <TextField fx:id="filingNum" layoutX="22.0" layoutY="531.0" prefHeight="39.0" prefWidth="393.0" />
+      <DatePicker fx:id="filingDate" layoutX="451.0" layoutY="531.0" prefHeight="39.0" prefWidth="393.0" styleClass="text-field" />
+      <DatePicker fx:id="fhearingDate" layoutX="877.0" layoutY="531.0" prefHeight="39.0" prefWidth="393.0" styleClass="text-field" />
+      <Text layoutX="25.0" layoutY="521.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filing Number :" />
+      <Text layoutX="453.0" layoutY="521.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filing date :" wrappingWidth="91.31073760986328" />
+      <Text layoutX="876.0" layoutY="522.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Hearing Date :" />
+      <TextField fx:id="locationTxt" layoutX="451.0" layoutY="435.0" prefHeight="39.0" prefWidth="393.0" />
+      <ComboBox fx:id="stageofCase" layoutX="877.0" layoutY="340.0" prefHeight="39.0" prefWidth="393.0" />
+      <Text layoutX="23.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Case priority :" />
+      <ComboBox fx:id="caseType" layoutX="22.0" layoutY="340.0" prefHeight="39.0" prefWidth="393.0" />
+      <ComboBox fx:id="subType" layoutX="451.0" layoutY="340.0" prefHeight="39.0" prefWidth="393.0" />
+      <Text layoutX="453.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Case Sub Type :" />
+      <Text layoutX="22.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Case Type :" />
+      <Text layoutX="453.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location :" />
+      <ComboBox fx:id="caseStautsCombo" layoutX="877.0" layoutY="435.0" prefHeight="39.0" prefWidth="393.0" visibleRowCount="2" />
+      <Text layoutX="876.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Case Status :" />
+      <Button fx:id="cancelBtn" layoutX="1262.0" layoutY="29.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="73.0" styleClass="cancel_button" stylesheets="@../Styles/crimeAdd.css" text="cancel" />
+      <Button fx:id="saveBtn" layoutX="1359.0" layoutY="29.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="73.0" styleClass="save_button" stylesheets="@../Styles/crimeAdd.css" text="Save" />
+      <Text layoutX="26.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Title" text="Case Details" wrappingWidth="147.35039138793945" />
+      <Text layoutX="877.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The date of the crime :" />
+      <DatePicker fx:id="cirmeDate" layoutX="877.0" layoutY="193.0" prefHeight="39.0" prefWidth="393.0" styleClass="text-field" />
+      <TextArea fx:id="discriptiontxt" layoutX="22.0" layoutY="615.0" prefHeight="192.0" prefWidth="1409.0" styleClass="text-field" />
+      <ComboBox fx:id="prioritybox" layoutX="22.0" layoutY="435.0" prefHeight="39.0" prefWidth="393.0" />
+      <Text layoutX="877.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stage of Case :" />
+      <TextField fx:id="OfficerBadgeNumber" layoutX="451.0" layoutY="110.0" prefHeight="39.0" prefWidth="393.0" stylesheets="@../Styles/crimeAdd.css" />
+      <Text layoutX="875.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Police Station" wrappingWidth="89.3384780883789" />
+      <ComboBox fx:id="policeStationcombo" layoutX="877.0" layoutY="110.0" prefHeight="39.0" prefWidth="393.0" />
+   </AnchorPane>
+   <Button fx:id="backBtn" layoutX="1397.0" layoutY="5.0" mnemonicParsing="false" prefHeight="8.0" prefWidth="56.0" styleClass="back_button" stylesheets="@../Styles/crimeAdd.css" text="Back">
+      <font>
+         <Font name="System Bold" size="1.0" />
+      </font>
+   </Button>
+</AnchorPane>

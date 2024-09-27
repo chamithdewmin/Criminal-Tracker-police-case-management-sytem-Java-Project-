@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Satellite Map with Detailed Labels</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        /* Full height and width for map */
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+        /* Center the search box and button */
+        .search-container {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .search-container input[type="text"] {
+            width: 200px;
+            padding: 5px;
+        }
+        .search-container button {
+            padding: 5px 10px;
+            margin-left: 5px;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div class="search-container">
+    <input type="text" id="search" placeholder="Search for a location...">
+    <button id="searchButton">Search</button>
+</div>
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+    // Initialize the map and set the view to Sri Lanka with zoom level 8
+    var map = L.map('map').setView([7.8731, 80.7718], 8); // Coordinates for Sri Lanka
+
+    // Esri World Imagery for satellite imagery
+    var satelliteLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri, Maxar, Earthstar Geographics, and the GIS User Community',
+        maxZoom: 18, // Limit max zoom to 18 for better performance
+        minZoom: 5,  // Set a minimum zoom level for faster load
+        detectRetina: true, // Optimize for retina displays
+        tileSize: 256,
+        noWrap: true
+    }).addTo(map);
+
+    // Esri World Boundaries and Places for detailed labels (cities, shops, roads, etc.)
+    var labelsLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Labels &copy; Esri, USGS, NOAA',
+        maxZoom: 18,
+        tileSize: 256,
+        noWrap: true
+    }).addTo(map);
+
+    // Create a search function using Nominatim API
+    function searchLocation(query) {
+        fetch('https://nominatim.openstreetmap.org/search?format=json&q=' + encodeURIComponent(query))
+            .then(response => response.json())
+            .then(data => {
+                if (data.length > 0) {
+                    var lat = data[0].lat;
+                    var lon = data[0].lon;
+                    map.setView([lat, lon], 13); // Zoom to the searched location
+                    L.marker([lat, lon]).addTo(map)
+                        .bindPopup(data[0].display_name)
+                        .openPopup();
+                } else {
+                    alert('Location not found');
+                }
+            })
+            .catch(error => console.error('Error:', error));
+    }
+
+    // Add event listener to the search button
+    document.getElementById('searchButton').addEventListener('click', function() {
+        var query = document.getElementById('search').value;
+        searchLocation(query);
+    });
+
+    // Optional: Allow pressing Enter to trigger the search
+    document.getElementById('search').addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+            document.getElementById('searchButton').click();
+        }
+    });
+</script>
+</body>
+</html>
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Google Maps Test</title>-->
+<!--    <style>-->
+<!--        #map {-->
+<!--            height: 100%;-->
+<!--            width: 100%;-->
+<!--        }-->
+<!--        html, body {-->
+<!--            height: 100%;-->
+<!--            margin: 0;-->
+<!--            padding: 0;-->
+<!--        }-->
+<!--        .search-container {-->
+<!--            position: absolute;-->
+<!--            top: 10px;-->
+<!--            left: 50%;-->
+<!--            transform: translateX(-50%);-->
+<!--            z-index: 1000;-->
+<!--            background: white;-->
+<!--            padding: 10px;-->
+<!--            border-radius: 5px;-->
+<!--            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);-->
+<!--        }-->
+<!--        .search-container input[type="text"] {-->
+<!--            width: 200px;-->
+<!--            padding: 5px;-->
+<!--        }-->
+<!--        .search-container button {-->
+<!--            padding: 5px 10px;-->
+<!--            margin-left: 5px;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<div class="search-container">-->
+<!--    <input type="text" id="search" placeholder="Search for a location...">-->
+<!--    <button id="searchButton">Search</button>-->
+<!--</div>-->
+
+<!--<div id="map"></div>-->
+
+<!--<script>-->
+<!--    let map;-->
+
+<!--    function initMap() {-->
+<!--        map = new google.maps.Map(document.getElementById('map'), {-->
+<!--            center: {lat: 7.8731, lng: 80.7718}, // Sri Lanka-->
+<!--            zoom: 8-->
+<!--        });-->
+<!--    }-->
+
+<!--    function searchLocation(query) {-->
+<!--        const geocoder = new google.maps.Geocoder();-->
+<!--        geocoder.geocode({ address: query }, function(results, status) {-->
+<!--            if (status === 'OK' && results[0]) {-->
+<!--                map.setCenter(results[0].geometry.location);-->
+<!--                new google.maps.Marker({-->
+<!--                    map: map,-->
+<!--                    position: results[0].geometry.location-->
+<!--                });-->
+<!--            } else {-->
+<!--                alert('Location not found');-->
+<!--            }-->
+<!--        });-->
+<!--    }-->
+
+<!--    document.getElementById('searchButton').addEventListener('click', function() {-->
+<!--        const query = document.getElementById('search').value;-->
+<!--        searchLocation(query);-->
+<!--    });-->
+
+<!--    document.getElementById('search').addEventListener('keypress', function(event) {-->
+<!--        if (event.key === 'Enter') {-->
+<!--            document.getElementById('searchButton').click();-->
+<!--        }-->
+<!--    });-->
+<!--</script>-->
+
+<!--<script async-->
+<!--        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNWXG9rPZbixFMwng82JDqdnDf8klyEC0&callback=initMap">-->
+<!--</script>-->
+
+<!--</body>-->
+<!--</html>-->

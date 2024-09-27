@@ -1,0 +1,156 @@
+
+.body{
+
+}
+.create_container {
+    -fx-background-color: #F0F8FF;
+}
+.create_container Text {
+    -fx-font-size: 1.3em;
+    -fx-fill: #000000;
+
+}
+
+.TextField {
+
+    -fx-pref-width: 260;
+    -fx-pref-height: 50;
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10;
+    -fx-font-size: 1.3em;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0, 0, 8);
+
+}
+.PasswordField {
+
+    -fx-pref-width: 260;
+    -fx-pref-height: 50;
+    -fx-background-color: #FFFFFF;
+    -fx-font-size: 1.3em;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0, 0, 8);
+}
+
+.create_container CheckBox {
+
+    -fx-font-size: 1.1em;
+    -fx-spacing: 10;
+    -fx-alignment: center-right;
+    -fx-text-fill: #000000;
+
+}
+
+.create_container Button {
+
+    -fx-background-color: linear-gradient(to right, #003366, #003366);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0, 0, 8);
+    -fx-pref-width: 260;
+    -fx-pref-height: 50;
+    -fx-font-size: 1.5em;
+    -fx-font-weight: bold;
+    -fx-font-family: "Calibri Light";
+    -fx-text-fill: #FFFFFF;
+
+}
+
+.create_container Button:hover {
+    -fx-cursor: hand;
+}
+.Title {
+    -fx-font-size: 2.6em;
+    -fx-font-weight: bold;
+    -fx-fill: #003366;
+    -fx-padding: 15;
+}
+.Check_button {
+    -fx-background-color: linear-gradient(to right, #003366, #003366);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0, 0, 8);
+    -fx-pref-width: 120;
+    -fx-pref-height: 30;
+    -fx-font-size: 1.2em;
+    -fx-font-weight: bold;
+    -fx-font-family: "Calibri Light";
+    -fx-text-fill: #FFFFFF;
+}
+
+.ShowPasswordText {
+    -fx-pref-width: 260;
+    -fx-pref-height: 50;
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10;
+    -fx-font-size: 1.3em;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0, 0, 8);
+}
+
+.combobox {
+    -fx-pref-width: 120;
+    -fx-pref-height: 50;
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0, 0, 8);
+
+
+}
+
+.ProfileText {
+    -fx-pref-width: 300;
+    -fx-pref-height: 50;
+    -fx-background-color: rgba(240, 248, 255, 0.75);
+    -fx-font-size: 1.3em;
+
+}
+
+.Label {
+    -fx-font-size: 1.3em;
+    -fx-fill: #000000;
+}
+
+.altLabel{
+    -fx-font-size: 1.3em;
+    -fx-fill: #ffffff;
+}
+
+.TextFieldProfile {
+    -fx-pref-width: 260;
+    -fx-pref-height: 50;
+    -fx-background-color: #C0C6CC; /* Adjusted background color */
+    -fx-background-radius: 35;
+    -fx-font-size: 1.3em;
+    -fx-border-color: transparent transparent #00000099 transparent; /* Ensures the border matches the design */
+    -fx-border-width: 0 0 2 0; /* Sets the bottom border width */
+    -fx-border-style: none none dotted none;
+}
+
+.EmailText {
+    -fx-pref-width: 545;
+    -fx-pref-height: 50;
+    -fx-background-color: #C0C6CC; /* Adjusted background color */
+    -fx-background-radius: 35;
+    -fx-font-size: 1.3em;
+    -fx-border-color: transparent transparent #00000099 transparent; /* Matching border color */
+    -fx-border-width: 0 0 2 0; /* Sets the bottom border width */
+    -fx-border-style: none none dotted none;
+}
+
+.PasswordFieldProfile {
+    -fx-pref-width: 260;
+    -fx-pref-height: 50;
+    -fx-background-color: #C0C6CC; /* Adjusted background color */
+    -fx-background-radius: 35;
+    -fx-font-size: 1.3em;
+    -fx-border-color: transparent transparent #00000099 transparent; /* Matching border color */
+    -fx-border-width: 0 0 2 0; /* Sets the bottom border width */
+    -fx-border-style: none none dotted none;
+}
+
+.boarder {
+    -fx-pref-width: 700;
+    -fx-pref-height: 800;
+    -fx-background-color: #C0C6CC; /* Background color remains the same */
+    -fx-font-size: 1.1em;
+    -fx-alignment: center_left;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-padding: 10;
+}
+

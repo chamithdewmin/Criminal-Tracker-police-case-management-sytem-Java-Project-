@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="519.0" prefWidth="780.0" styleClass="container" stylesheets="@../Styles/Login.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.crimejava.Controllers.LoginController">
+   <AnchorPane layoutX="-23.0" prefHeight="519.0" prefWidth="340.0" style="-fx-background-color: #003366;" styleClass="boarder" stylesheets="@../Styles/Login.css">
+      <ImageView fx:id="LoginIcon" fitHeight="186.0" fitWidth="278.0" layoutX="30.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="251.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="31.0" />
+      <Label layoutX="98.0" layoutY="197.0" text="Welcome to" textFill="WHITE">
+         <font>
+            <Font name="Sylfaen" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="231.0" text="Criminal Tracker" textFill="WHITE">
+         <font>
+            <Font name="Sylfaen" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="279.0" text="Efficiently manage and track criminal records" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label layoutX="53.0" layoutY="297.0" text="with secure access. Login to add, view, and" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label layoutX="57.0" layoutY="315.0" text="search detailed criminal profiles, ensuring" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label layoutX="121.0" layoutY="335.0" text=" safety and justice." textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <ImageView fitHeight="217.0" fitWidth="320.0" layoutX="21.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../Images/icon.png" />
+      </ImageView>
+   </AnchorPane>
+   <ImageView fitHeight="254.0" fitWidth="257.0" layoutX="432.0" layoutY="-16.0">
+      <Image url="@../Images/plogin.png" />
+   </ImageView>
+   <TextField fx:id="usernametxt" layoutX="422.0" layoutY="208.0" prefHeight="38.0" prefWidth="278.0" promptText="Username">
+      <font>
+         <Font size="19.0" />
+      </font></TextField>
+   <Label fx:id="fogetpassword" layoutX="503.0" layoutY="475.0" styleClass="Label" stylesheets="@../Styles/Login.css" text="Forget password?" textFill="BLUE">
+      <font>
+         <Font size="15.0" />
+      </font></Label>
+   <Button fx:id="loginbtn" layoutX="433.0" layoutY="404.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="257.0" text="Login" textFill="WHITE">
+      <font>
+         <Font name="Microsoft PhagsPa" size="22.0" />
+      </font>
+   </Button>
+   <Label layoutX="424.0" layoutY="185.0" text="Username :">
+      <font>
+         <Font size="14.0" />
+      </font></Label>
+   <Label layoutX="423.0" layoutY="274.0" text="Password :">
+      <font>
+         <Font size="14.0" />
+      </font></Label>
+   <CheckBox fx:id="chk_password" layoutX="578.0" layoutY="348.0" mnemonicParsing="false" text="Show password">
+      <font>
+         <Font size="14.0" />
+      </font></CheckBox>
+   <TextField fx:id="pasword_txt" layoutX="423.0" layoutY="297.0" prefHeight="40.0" prefWidth="278.0" promptText="Password">
+      <font>
+         <Font size="19.0" />
+      </font>
+   </TextField>
+   <PasswordField fx:id="password_fld" layoutX="423.0" layoutY="297.0" prefHeight="40.0" prefWidth="278.0" promptText="Password">
+      <font>
+         <Font size="19.0" />
+      </font>
+   </PasswordField>
+</Pane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1500.0" styleClass="body" stylesheets="@../Styles/AddComplaint.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.crimejava.Controllers.AddComplainsControllers">
+   <AnchorPane layoutX="23.0" layoutY="45.0" prefHeight="793.0" prefWidth="1439.0" styleClass="boarder" stylesheets="@../Styles/AddComplaint.css">
+      <TextArea fx:id="descriptiontxt" layoutX="25.0" layoutY="630.0" prefHeight="178.0" prefWidth="1267.0" styleClass="text-field" />
+      <Label layoutX="25.0" layoutY="607.0" text="Description of Incident:" />
+      <Label layoutX="473.0" layoutY="431.0" text="Date of Incident:" />
+      <DatePicker fx:id="incidentDatePicker" layoutX="469.0" layoutY="453.0" prefHeight="39.0" prefWidth="393.0" styleClass="text-field" />
+      <Label layoutX="919.0" layoutY="430.0" text="How Reported (phone, email, in-person):" />
+      <ComboBox fx:id="howReportedtxt" layoutX="917.0" layoutY="453.0" prefHeight="39.0" prefWidth="393.0" styleClass="text-field" />
+      <TextField fx:id="locationtxt" layoutX="25.0" layoutY="543.0" prefHeight="39.0" prefWidth="393.0" styleClass="text-field" />
+      <Label layoutX="28.0" layoutY="520.0" text="Incident Location:" />
+      <TextField fx:id="emailtxt" layoutX="918.0" layoutY="297.0" prefHeight="39.0" prefWidth="393.0" styleClass="text-field" />
+      <TextField fx:id="agetxt" layoutX="917.0" layoutY="211.0" prefHeight="39.0" prefWidth="393.0" styleClass="text-field" />
+      <TextField fx:id="citytxt" layoutX="917.0" layoutY="117.0" prefHeight="39.0" prefWidth="393.0" styleClass="text-field" />
+      <ComboBox fx:id="gendercombo" layoutX="471.0" layoutY="297.0" prefHeight="39.0" prefWidth="393.0" styleClass="text-field" />
+      <TextField fx:id="nictxt" layoutX="25.0" layoutY="297.0" prefHeight="39.0" prefWidth="393.0" styleClass="text-field" />
+      <Label layoutX="29.0" layoutY="275.0" text="NIC :" />
+      <TextField fx:id="numbertxt" layoutX="25.0" layoutY="211.0" prefHeight="39.0" prefWidth="393.0" />
+      <Label layoutX="473.0" layoutY="275.0" text="Gender :" />
+      <Label layoutX="919.0" layoutY="275.0" text="Email :" />
+      <DatePicker fx:id="dobDatePicker" layoutX="471.0" layoutY="211.0" prefHeight="39.0" prefWidth="393.0" styleClass="text-field" />
+      <Label layoutX="919.0" layoutY="188.0" text="Age :" />
+      <Label layoutX="26.0" layoutY="189.0" text="Contact Number :" />
+      <Label layoutX="472.0" layoutY="189.0" text="Date of Birth :" />
+      <TextField fx:id="addresstxt" layoutX="469.0" layoutY="117.0" prefHeight="39.0" prefWidth="393.0" styleClass="text-field" />
+      <Label layoutX="918.0" layoutY="95.0" text="City/State/Zip :" />
+      <Label layoutX="471.0" layoutY="96.0" text="Address :" />
+      <Label layoutX="27.0" layoutY="96.0" text="Full Name :" />
+      <Text layoutX="27.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Title" text="Complainant Information" />
+      <Text layoutX="25.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Title" text="Incident Information" />
+      <Label layoutX="27.0" layoutY="430.0" text="Nature of Complaint :" />
+      <Button fx:id="CancelBtn" layoutX="1262.0" layoutY="29.0" mnemonicParsing="false" styleClass="cancel_button" text="Cancel" />
+      <Button fx:id="saveBtn" layoutX="1354.0" layoutY="29.0" mnemonicParsing="false" styleClass="save_button" text="Save" />
+      <ComboBox fx:id="incidentcombo" layoutX="25.0" layoutY="453.0" prefHeight="39.0" prefWidth="393.0" styleClass="text-field" />
+      <TextField fx:id="fullNametxt" layoutX="25.0" layoutY="117.0" prefHeight="39.0" prefWidth="393.0" styleClass="text-field" />
+      <TextField fx:id="discrictxt" layoutX="471.0" layoutY="543.0" prefHeight="39.0" prefWidth="393.0" styleClass="text-field" />
+      <Label layoutX="470.0" layoutY="520.0" text="Discric/Area :" />
+   </AnchorPane>
+   <Button fx:id="backBtn" layoutX="1404.0" layoutY="11.0" mnemonicParsing="false" styleClass="back_button" stylesheets="@../Styles/AddComplaint.css" text="Back" />
+</AnchorPane>

@@ -1,0 +1,46 @@
+.TextField {
+
+    -fx-pref-width: 409;
+    -fx-pref-height: 50;
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10;
+    -fx-font-size: 1.3em;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 8);
+
+}
+
+.TextArea {
+    -fx-pref-width: 409;
+    -fx-pref-height: 210;
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10; /* Set the background radius */
+    -fx-border-radius: 10;     /* Set the border radius */
+    -fx-border-color: #CCCCCC; /* Optional: Add a light border */
+    -fx-border-width: 1;       /* Optional: Set border width */
+    -fx-font-size: 1.3em;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 8);
+}
+
+.Submit_Button {
+    -fx-background-color: linear-gradient(to right, #003366, #003366);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 8);
+    -fx-pref-width: 90;
+    -fx-pref-height: 40;
+    -fx-font-size: 1.7em;
+    -fx-font-weight: bold;
+    -fx-font-family: "Calibri Light";
+    -fx-text-fill: #FFFFFF;
+    -fx-cursor: hand;
+
+}
+
+.Date_Picker {
+
+    -fx-pref-width: 200;
+    -fx-pref-height: 50;
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10;
+    -fx-font-size: 1.3em;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 8);
+
+}

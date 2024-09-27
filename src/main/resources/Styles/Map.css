@@ -1,0 +1,39 @@
+.body{
+
+    -fx-background-color: #F0F8FF;
+}
+
+.webview {
+    -fx-border-width: 0;
+    -fx-background-color: transparent;
+}
+
+.webview {
+    -fx-border-width: 0;
+    -fx-background-color: transparent;
+}
+
+.boarder {
+    -fx-pref-width: 1455;
+    -fx-pref-height: 815;
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #003366;
+    -fx-font-size: 1.1em;
+    -fx-alignment: center_left;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 15, 0.5, 0, 8);
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-padding: 10;
+}
+
+/* Button Styling */
+.refresh_button {
+    -fx-background-color: linear-gradient(to right, #003366, #003366);
+    -fx-pref-width: 85;
+    -fx-pref-height: 25;
+    -fx-font-size: 1.4em;
+    -fx-font-weight: bold;
+    -fx-font-family: "Calibri Light";
+    -fx-text-fill: #FFFFFF;
+    -fx-cursor: hand;
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1500.0" styleClass="create_container" stylesheets="@../Styles/Register.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.crimejava.Controllers.RegisterController">
+   <Text fill="#051545" layoutX="46.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Title" text="Create New Account" />
+   <Text layoutX="54.0" layoutY="628.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Password :" />
+   <PasswordField fx:id="password" layoutX="53.0" layoutY="638.0" promptText="Password" styleClass="PasswordField" />
+   <CheckBox fx:id="show_password" layoutX="197.0" layoutY="703.0" mnemonicParsing="false" text="Show password" />
+   <Button fx:id="createbutton" layoutX="53.0" layoutY="744.0" mnemonicParsing="false" prefWidth="242.0" text="Create Account" />
+   <TextField fx:id="passwordtxt" layoutX="53.0" layoutY="638.0" prefWidth="288.0" promptText="Password" styleClass="ShowPasswordText" />
+   <Text layoutX="50.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="create_container" text="Enter your first name : " />
+   <TextField fx:id="fname" layoutX="51.0" layoutY="102.0" promptText="Frist Name" styleClass="TextField" />
+   <Text layoutX="51.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your last name :" />
+   <TextField fx:id="lname" layoutX="51.0" layoutY="198.0" promptText="Last Name" styleClass="TextField" />
+   <Text layoutX="54.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your email :" />
+   <TextField fx:id="email" layoutX="53.0" layoutY="399.0" promptText="Email" styleClass="TextField" />
+   <Text layoutX="60.0" layoutY="487.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Username :" />
+   <TextField fx:id="username" layoutX="53.0" layoutY="496.0" promptText="Username" styleClass="TextField" />
+   <Button fx:id="check_username" layoutX="58.0" layoutY="558.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="110.0" styleClass="Check_button" text="Check Username">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Button>
+   <Line endX="-100.0" endY="696.0" layoutX="123.0" layoutY="175.0" startX="-100.0" startY="-134.0" />
+   <AnchorPane layoutX="731.0" layoutY="51.0" prefHeight="793.0" prefWidth="698.0" styleClass="boarder">
+      <Label fx:id="setFname" layoutX="98.0" layoutY="339.0" prefHeight="41.0" prefWidth="281.0" styleClass="TextFieldProfile" />
+      <Label fx:id="setLname" layoutX="380.0" layoutY="339.0" prefHeight="41.0" prefWidth="281.0" styleClass="TextFieldProfile" />
+      <Label fx:id="setEmail" layoutX="95.0" layoutY="441.0" prefHeight="41.0" prefWidth="545.0" styleClass="EmailText" />
+      <Label fx:id="setBadgenumber" layoutX="98.0" layoutY="537.0" prefHeight="41.0" prefWidth="281.0" styleClass="TextFieldProfile" />
+      <Label fx:id="setusername" layoutX="380.0" layoutY="537.0" prefHeight="41.0" prefWidth="281.0" styleClass="TextFieldProfile" />
+      <PasswordField fx:id="setPassword" layoutX="240.0" layoutY="644.0" styleClass="PasswordFieldProfile" />
+      <ImageView fx:id="boyIcon" fitHeight="230.0" fitWidth="225.0" layoutX="244.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../Images/ProfileBoy.png" />
+      </ImageView>
+      <Label layoutX="245.0" layoutY="216.0" prefHeight="50.0" prefWidth="223.0" styleClass="Title" text="Your Profile" />
+      <Label layoutX="95.0" layoutY="312.0" styleClass="altLabel" text="First Name :" />
+      <Label layoutX="370.0" layoutY="312.0" prefHeight="26.0" prefWidth="92.0" styleClass="altLabel" text="Last Name :" />
+      <Label layoutX="95.0" layoutY="509.0" prefHeight="23.0" prefWidth="126.0" styleClass="Label" text="Badge Number :" />
+      <Label layoutX="95.0" layoutY="415.0" prefHeight="0.0" prefWidth="63.0" styleClass="Label" text="Email :" />
+      <Label layoutX="367.0" layoutY="509.0" prefHeight="23.0" prefWidth="98.0" styleClass="Label" text="Username :" />
+      <Label layoutX="240.0" layoutY="618.0" prefHeight="23.0" prefWidth="85.0" styleClass="Label" text="Password :" />
+      <ImageView fx:id="girlIcon" fitHeight="230.0" fitWidth="225.0" layoutX="245.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../Images/profileGirl.png" />
+      </ImageView>
+      <ImageView fx:id="NoneIcon" fitHeight="286.0" fitWidth="358.0" layoutX="214.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../Images/NonIcon.png" />
+      </ImageView>
+   </AnchorPane>
+   <TextField fx:id="badgeNumber" layoutX="53.0" layoutY="301.0" promptText="Badge Number" styleClass="TextField" />
+   <Text layoutX="55.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your badge number :" />
+   <ComboBox fx:id="gendercombo" layoutX="345.0" layoutY="102.0" prefHeight="50.0" prefWidth="137.0" promptText="Sir / Madam " styleClass="combobox" />
+   <Button fx:id="refreshBtn" layoutX="53.0" layoutY="807.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="1.0" text="Update" />
+</AnchorPane>

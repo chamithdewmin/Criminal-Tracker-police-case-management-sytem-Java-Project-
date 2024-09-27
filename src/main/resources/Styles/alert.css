@@ -1,0 +1,20 @@
+.custom-alert {
+    -fx-background-color: #000000; /* Black background */
+    -fx-text-fill: #ffffff; /* White text */
+}
+
+.custom-alert .header-panel,
+.custom-alert .content {
+    -fx-background-color: #000000; /* Black background */
+    -fx-text-fill: #ffffff; /* White text */
+}
+
+.custom-alert .button-bar .button {
+    -fx-background-color: #333333; /* Dark grey background for buttons */
+    -fx-text-fill: #ffffff; /* White text for buttons */
+    -fx-background-radius: 0; /* Flat button */
+}
+
+.custom-alert .button-bar .button:hover {
+    -fx-background-color: #555555; /* Slightly lighter grey on hover */
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="227.0" styleClass="body" stylesheets="@../Styles/Menu.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.crimejava.Controllers.AdminMenuController">
+   <AnchorPane prefHeight="730.0" prefWidth="200.0" stylesheets="@../Styles/Menu.css">
+      <VBox layoutX="4.0" layoutY="13.0" prefHeight="125.0" prefWidth="219.0" styleClass="title_container" stylesheets="@../Styles/Menu.css" AnchorPane.leftAnchor="4.0" AnchorPane.topAnchor="13.0">
+         <FontAwesomeIconView fill="WHITE" glyphName="SHIELD" size="65" wrappingWidth="32.571489334106445" />
+         <Label prefHeight="35.0" prefWidth="204.0" text=" Criminal Tracker" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="24.0" />
+            </font>
+         </Label>
+      </VBox>
+      <VBox layoutX="9.0" layoutY="141.0" prefHeight="534.0" prefWidth="210.0" styleClass="menu_container" stylesheets="@../Styles/Menu.css">
+         <Button fx:id="AdmindashboardButton" mnemonicParsing="false" prefWidth="150.0" text="Dashboard">
+            <graphic>
+               <FontAwesomeIconView glyphName="HOME" size="20" text="" />
+            </graphic>
+         </Button>
+         <Button fx:id="AdmincrimeButton" mnemonicParsing="false" prefWidth="132.0" text="Crime Cases">
+            <graphic>
+               <FontAwesomeIconView glyphName="BOOK" size="20" />
+            </graphic>
+         </Button>
+         <Button fx:id="AdminaccidentButton" mnemonicParsing="false" prefHeight="43.0" prefWidth="155.0" text="Accident reports">
+            <graphic>
+               <FontAwesomeIconView glyphName="MEDKIT" size="20" />
+            </graphic>
+         </Button>
+         <Button fx:id="AdminComplaintsBtn" mnemonicParsing="false" text="Complaints">
+            <graphic>
+               <FontAwesomeIconView glyphName="ENVELOPE_OPEN" size="20" />
+            </graphic>
+         </Button>
+         <Button fx:id="AdminmapButton" mnemonicParsing="false" prefWidth="133.0" text="Track by map">
+            <graphic>
+               <FontAwesomeIconView glyphName="MAP" size="20" />
+            </graphic>
+         </Button>
+
+         <!-- Added userBtn -->
+         <Button fx:id="UserBtn" mnemonicParsing="false" text="User">
+            <graphic>
+               <FontAwesomeIconView glyphName="USER" size="20" />
+            </graphic>
+         </Button>
+
+         <Line endX="68.58578491210938" endY="-8.690357208251953E-5" startX="-100.0" stroke="WHITE" strokeWidth="2.0" />
+         <Button fx:id="AdminregisterButton" mnemonicParsing="false" styleClass="alt_menu_btn" text="Register">
+            <graphic>
+               <FontAwesomeIconView glyphName="USER" size="20" />
+            </graphic>
+         </Button>
+         <Button fx:id="AdminlogoutButton" mnemonicParsing="false" styleClass="alt_menu_btn" text="Logout">
+            <graphic>
+               <FontAwesomeIconView glyphName="EXTERNAL_LINK" size="20" />
+            </graphic>
+         </Button>
+      </VBox>
+      <VBox layoutX="15.0" layoutY="735.0" prefHeight="132.0" prefWidth="199.0" styleClass="report_container">
+         <Label text="Report Suggestion/Bug?">
+            <font>
+               <Font name="System Bold" size="15.0" />
+            </font>
+         </Label>
+         <Label prefHeight="21.0" prefWidth="158.0" text="Use this to report Bugs.">
+            <font>
+               <Font size="15.0" />
+            </font>
+         </Label>
+         <Button fx:id="AdminreportButton" mnemonicParsing="false" prefHeight="36.0" prefWidth="141.0" text="Add Report">
+            <graphic>
+               <FontAwesomeIconView glyphName="PLUS" />
+            </graphic>
+            <font>
+               <Font size="15.0" />
+            </font>
+         </Button>
+      </VBox>
+   </AnchorPane>
+</VBox>
