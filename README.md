@@ -1,6 +1,6 @@
 # Criminal Tracker - Police Case Management System
 
-![Criminal Tracker](https://github.com/chamithdewmin/Criminal-Tracker-police-case-management-sytem-Java-Projectsrc/main/resources/Images/ss.png)
+![Criminal Tracker](https://github.com/chamithdewmin/Criminal-Tracker-police-case-management-sytem-Java-Project/blob/main/src/main/resources/Images/ss.png)
 
 **Criminal Tracker** is a Java-based police case management system designed to help law enforcement officers manage criminal records and case details efficiently. The system provides functionalities for adding, updating, deleting, and searching criminal records, as well as managing officer and case information.
 
